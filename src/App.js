@@ -15,10 +15,13 @@ function App() {
   console.log(planetaryData);
 
   return (
-    <div className="App">
+    <figure className="App">
       <h1>Astronomy Picture of the Day</h1>
+      <p className="date">{planetaryData.date}</p>
       <img src={planetaryData.url} alt={planetaryData.title}/>
-    </div>
+      <figcaption className="title">{planetaryData.title}</figcaption>
+      <p className="description">{planetaryData.explanation}</p>
+    </figure>
   );
 }
 

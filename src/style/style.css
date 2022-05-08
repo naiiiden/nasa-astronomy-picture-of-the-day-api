@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +8,35 @@
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: Ubuntu, sans-serif;
-  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000;
+  position: relative;
+}
+
+.App {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: .5rem;
 }
 
 img {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  max-width: 100%;
+}
+
+.description {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
