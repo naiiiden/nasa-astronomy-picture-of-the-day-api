@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nasa-astronomy-picture-of-the-day-api/static/css/main.66fee490.css",
+    "main.js": "/nasa-astronomy-picture-of-the-day-api/static/js/main.8e7ebe32.js",
+    "index.html": "/nasa-astronomy-picture-of-the-day-api/index.html",
+    "main.66fee490.css.map": "/nasa-astronomy-picture-of-the-day-api/static/css/main.66fee490.css.map",
+    "main.8e7ebe32.js.map": "/nasa-astronomy-picture-of-the-day-api/static/js/main.8e7ebe32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66fee490.css",
+    "static/js/main.8e7ebe32.js"
+  ]
+}
