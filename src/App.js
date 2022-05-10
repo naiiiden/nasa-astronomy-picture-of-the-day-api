@@ -30,7 +30,11 @@ function App() {
 
   return (
     <div>
-      {date > today && <p>tomorrow's picture is not available yet</p>}
+      {date > today && 
+      <div>
+        <p>tomorrow's picture is not available yet</p>
+        <button onClick={decrementDate}>previous day</button>
+      </div>}
 
       {date <= today && 
         <figure className="App">
