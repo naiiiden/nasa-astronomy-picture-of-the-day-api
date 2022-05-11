@@ -43,8 +43,10 @@ function App() {
           <img src={planetaryData.url} alt={planetaryData.title}/>
           <figcaption className="title">{planetaryData.title}</figcaption>
           <p className="description">{planetaryData.explanation}</p>
-          <button onClick={decrementDate}>previous day</button>
-          <button onClick={incrementDate}>next day</button>
+          <div className="buttons--container">
+            <button onClick={decrementDate}>previous day</button>
+            <button onClick={incrementDate}>next day</button>
+          </div>
         </figure>}
     </div>
   );

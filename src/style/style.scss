@@ -29,3 +29,9 @@ img {
 .description {
     width: 80%;
 }
+
+.buttons--container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
