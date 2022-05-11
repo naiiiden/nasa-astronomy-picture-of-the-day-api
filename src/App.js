@@ -1,5 +1,7 @@
 /* css import */
 import "./style/style.css";
+/* components import */
+import Button from "./components/Button";
 
 import { useState, useEffect, useCallback } from "react";
 
@@ -37,8 +39,8 @@ function App() {
           <figcaption className="title">{planetaryData.title}</figcaption>
           <p className="description">{planetaryData.explanation}</p>
           <div className="buttons--container">
-            <button onClick={decrementDate}>previous day</button>
-            {today.getDate() === date.getDate() ? <button disabled onClick={incrementDate}>next day</button> : <button onClick={incrementDate}>next day</button>}
+            <Button text="previous day" onClick={decrementDate}/>
+            {today.getDate() === date.getDate() ? <Button disabled onClick={incrementDate} text="next day"/> : <Button onClick={incrementDate} text="next day"/>}
           </div>
         </figure>
     </div>
