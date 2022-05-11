@@ -30,10 +30,9 @@ function App() {
 
   return (
     <div>
-        {date > today && 
+      {date > today && 
       <div>
         <p>tomorrow's picture is not available yet</p>
-        <h1>A TEST COMMIT (GIT)</h1>
         <button onClick={decrementDate}>previous day</button>
       </div>}
 
