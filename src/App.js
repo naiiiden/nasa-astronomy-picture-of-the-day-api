@@ -40,7 +40,7 @@ function App() {
           <p className="description">{planetaryData.explanation}</p>
           <div className="buttons--container">
             <Button text="previous day" onClick={decrementDate}/>
-            {today.getDate() === date.getDate() ? <Button disabled onClick={incrementDate} text="next day"/> : <Button onClick={incrementDate} text="next day"/>}
+            {today.getDate() === date.getDate() ? <Button disabled={true} onClick={incrementDate} text="next day"/> : <Button onClick={incrementDate} text="next day"/>}
           </div>
         </figure>
     </div>
