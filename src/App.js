@@ -30,13 +30,6 @@ function App() {
 
   return (
     <div>
-      {date > today && 
-      <div>
-        <p>tomorrow's picture is not available yet</p>
-        <button onClick={decrementDate}>previous day</button>
-      </div>}
-
-      {date <= today && 
         <figure className="App">
           <h1>Astronomy Picture of the Day</h1>
           <p className="date">{planetaryData.date}</p>
@@ -45,9 +38,9 @@ function App() {
           <p className="description">{planetaryData.explanation}</p>
           <div className="buttons--container">
             <button onClick={decrementDate}>previous day</button>
-            <button onClick={incrementDate}>next day</button>
+            {today.getDate() == date.getDate() ? <button disabled onClick={incrementDate}>next day</button> : <button onClick={incrementDate}>next day</button>}
           </div>
-        </figure>}
+        </figure>
     </div>
   );
 }
